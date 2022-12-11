@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} choice a name of title don't forget {% endblock title %}</title>
+    {% block header %} {% include 'sites/include/header.html' %} {% endblock header %}
+</head>
+<body>
+    {% block nav %} {% include 'sites/include/nav.html' %} {% endblock nav %}
+    {% block body %} choice a name of body don't forget <img src="{% static 'media/1.jpg' %}" alt="net foto">
+
+    {% endblock body %}
+    {% block footer %} {% include 'sites/include/footer.html' %} {% endblock footer %}
+</body>
+</html>
