@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} choice a name of title don't forget {% endblock title %}</title>
+    {% block header %} {% include 'include/header.html' %} {% endblock header %}
+</head>
+<body>
+    {% block nav %} {% include 'include/nav.html' %} {% endblock nav %}
+    {% block body %} {% endblock body %}
+    {% block footer %} {% include 'include/footer.html' %} {% endblock footer %}
+</body>
+</html>

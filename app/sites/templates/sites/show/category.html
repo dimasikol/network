@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Категории новостей {% endblock title %}
+{% block body %}
+    {% for item in context %}
+        <div>
+            <div><a href="{% url 'news_category' item.slug %}">{{ item.name }}</a></div>
+            <a href="{% url 'news_category' item.slug %}"><img src="{{ item.image.url }}" alt="" width="100"></a>
+        </div>
+        <br>
+    {% endfor %}
+{% endblock body %}

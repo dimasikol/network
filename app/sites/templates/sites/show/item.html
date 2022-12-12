@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Новость {% endblock title %}
+{% block body %}
+    {% autoescape off %}
+    <div>{{ context.name }}</div>
+    <div>{{ context.text_area }}</div>
+    {% endautoescape %}
+
+{% endblock body %}
